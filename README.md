@@ -1,37 +1,44 @@
-# trader-behavior-market-sentiment
-Analysis of trader performance vs Bitcoin market sentiment
-Trader Behavior vs Market Sentiment Analysis
+# Trader Behavior vs Market Sentiment Analysis
 
-Project Overview
-This project studies the relationship between trader performance and Bitcoin market sentiment using historical trading data from Hyperliquid along with the Bitcoin Fear & Greed Index. The main objective is to understand how market sentiment affects trader behavior and to derive practical trading strategies based on these observations.
+## Project Overview
+This project analyzes the relationship between trader performance and Bitcoin market sentiment using historical trading data from Hyperliquid and the Bitcoin Fear & Greed Index. The objective is to understand how market sentiment influences trader behavior and to derive practical, data-driven trading strategies.
 
-Datasets Used
-Historical Trader Data (Hyperliquid)
-This dataset contains transaction-level trading information such as execution price, trade size, trade side, and closed profit or loss.
+## Datasets Used
 
-Bitcoin Fear & Greed Index
-This dataset provides daily Bitcoin market sentiment classifications such as Fear, Extreme Fear, and Greed.
+### 1. Historical Trader Data (Hyperliquid)
+This dataset contains transaction-level trading information, including:
+- Execution price  
+- Trade size  
+- Trade side (buy/sell)  
+- Closed profit and loss (PnL)
 
-Methodology
-Data cleaning and preprocessing were carried out to handle timestamp conversion, missing values, and data type inconsistencies. Feature engineering was then performed to create daily-level performance metrics such as total profit and loss, trading volume, win rate, and trade count. The trader data was aggregated on a daily basis and merged with the market sentiment data. Exploratory Data Analysis (EDA) was conducted to identify patterns in trader behavior across different sentiment conditions. Based on these insights, actionable trading strategy recommendations were developed.
+### 2. Bitcoin Fear & Greed Index
+This dataset provides daily Bitcoin market sentiment information, including:
+- Sentiment score  
+- Sentiment classification (Fear, Extreme Fear, Greed)
 
-Key Insights
-Trading activity and volume increase significantly during Greed market conditions.
-Profitability during Greed phases is more volatile, indicating higher risk exposure.
-Win rates tend to be higher during Fear and Extreme Fear periods.
-Market sentiment has a stronger influence on trader behavior than on direct profitability.
+## Methodology
+- Performed data cleaning and preprocessing to handle timestamps, missing values, and data type inconsistencies.
+- Applied feature engineering to create daily performance metrics such as total PnL, trading volume, win rate, and trade count.
+- Aggregated trader data at a daily level and merged it with market sentiment data.
+- Conducted Exploratory Data Analysis (EDA) to identify behavioral patterns across different sentiment conditions.
+- Developed actionable trading strategy recommendations based on observed insights.
 
-Outputs
-All visualizations generated during the analysis are stored in the outputs folder. These include charts showing profit and loss, trading volume, win rate, and trade count across different market sentiment conditions.
+## Key Insights
+- Trading activity and volume increase significantly during Greed market conditions.
+- Profitability during Greed phases is more volatile, indicating higher risk exposure.
+- Win rates tend to be higher during Fear and Extreme Fear periods.
+- Market sentiment influences trader behavior more strongly than direct profitability.
 
-How to Run the Project
-Open the notebook_1.ipynb file in Google Colab.
-Upload the CSV files from the csv_files folder.
-Run all cells in sequence.
-Review the generated visualizations and insights.
+## Outputs
+All visualizations generated during the analysis are stored in the `outputs/` folder, including:
+- Profit and Loss vs Market Sentiment
+- Trading Volume vs Market Sentiment
+- Win Rate vs Market Sentiment
+- Trade Count vs Market Sentiment
 
-Conclusion
-The analysis demonstrates the importance of sentiment-aware risk management. Traders who adapt their trading behavior based on prevailing market sentiment may achieve more consistent performance across different market conditions.
-
-Future Work
-Future improvements could include incorporating time-series models, lagged sentiment features, and risk-adjusted performance metrics to further enhance analytical depth and predictive capabilities.
+## How to Run the Project
+1. Open `notebook_1.ipynb` in Google Colab.
+2. Upload the CSV files from the `csv_files/` folder.
+3. Run all cells in sequence.
+4. Review the
